@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Request</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .button-container {
+            position: relative;
+            display: inline-block;
+        }
+        .no-btn {
+            position: absolute;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will you be my Valentine?</h1>
+    <div class="button-container">
+        <button onclick="alert('Yay! ❤️')">Yes</button>
+        <button class="no-btn" id="noButton">No</button>
+    </div>
+
+    <script>
+        const noButton = document.getElementById("noButton");
+
+        noButton.addEventListener("mouseover",
